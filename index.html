@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <title>My Unity WebGL Games</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <style>
+    body {
+      margin: 0;
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      background: #111827;
+      color: #e5e7eb;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      min-height: 100vh;
+    }
+
+    header {
+      padding: 20px 16px 8px;
+      text-align: center;
+    }
+
+    h1 {
+      margin: 0;
+      font-size: 1.8rem;
+    }
+
+    p.subtitle {
+      margin: 8px 0 0;
+      font-size: 0.9rem;
+      color: #9ca3af;
+    }
+
+    .game-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 16px;
+      width: 100%;
+      max-width: 960px;
+      padding: 16px;
+      box-sizing: border-box;
+    }
+
+    .game-card {
+      background: #1f2937;
+      border-radius: 12px;
+      padding: 16px;
+      box-shadow: 0 8px 20px rgba(0,0,0,0.35);
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      min-height: 140px;
+    }
+
+    .game-title {
+      font-size: 1.1rem;
+      margin-bottom: 8px;
+    }
+
+    .game-desc {
+      font-size: 0.85rem;
+      color: #9ca3af;
+      margin-bottom: 12px;
+    }
+
+    .play-btn {
+      display: inline-block;
+      padding: 8px 14px;
+      border-radius: 999px;
+      border: 1px solid #4b5563;
+      text-decoration: none;
+      color: #e5e7eb;
+      font-size: 0.9rem;
+      text-align: center;
+      transition: background 0.15s, transform 0.1s, box-shadow 0.15s;
+    }
+
+    .play-btn:hover {
+      background: #2563eb;
+      border-color: #2563eb;
+      box-shadow: 0 6px 14px rgba(37,99,235,0.5);
+      transform: translateY(-1px);
+    }
+
+    footer {
+      margin-top: auto;
+      padding: 12px;
+      font-size: 0.75rem;
+      color: #6b7280;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>My Unity WebGL Games</h1>
+    <p class="subtitle">플레이해보고 싶은 게임을 선택하세요 👇</p>
+  </header>
+
+  <main class="game-grid">
+    <!-- 게임 1 -->
+    <article class="game-card">
+      <div>
+        <div class="game-title">Game 1</div>
+        <div class="game-desc">
+          첫 번째 유니티 WebGL 게임입니다. (예: 로그라이크, 테스트용 빌드 등)
+        </div>
+      </div>
+      <a class="play-btn" href="./leadToHeaven/" target="_blank">게임 실행하기</a>
+    </article>
+
+    <!-- 나중에 게임 2, 3 추가할 때 이 부분 복붙 후 경로만 바꾸면 됨 -->
+    <!--
+    <article class="game-card">
+      <div>
+        <div class="game-title">Game 2</div>
+        <div class="game-desc">
+          두 번째 게임 설명을 여기에 적습니다.
+        </div>
+      </div>
+      <a class="play-btn" href="./game2/" target="_blank">게임 실행하기</a>
+    </article>
+    -->
+  </main>
+
+  <footer>
+    Hosted on GitHub Pages · Unity WebGL
+  </footer>
+</body>
+</html>
